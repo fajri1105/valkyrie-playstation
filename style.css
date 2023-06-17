@@ -260,6 +260,41 @@ main a{
     color: var(--warna3);
     display: inline-block;
 }
+#contact{
+    padding: 1rem;
+    display: flex;
+    background-color: var(--warna2);
+    color: white;
+}
+#contact .kiri{
+    width: 60%;
+    border-right: 1px solid white;
+}
+#contact .kiri h1{
+    font-size: 1.5rem;
+}
+#contact .kiri p{
+    font-size: .8rem;
+}
+#contact .kanan {
+    padding-left: 1rem;
+}
+#contact .kanan ul{
+    list-style-type: none;
+}
+#contact .kanan ul li a{
+    text-decoration: none;
+    color: white;
+}
+#contact ul.medsos{
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+#contact .kanan ul li img{
+    width: 20px;
+    margin-right: .6rem;
+}
 
 @media screen and (max-width: 700px) {
     #home nav ul{
