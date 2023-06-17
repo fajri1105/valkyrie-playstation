@@ -187,6 +187,30 @@ main a{
     font-size: 1.1rem;
 }
 
+
+@keyframes geser{
+    0%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#games .topGames .cards .card figure{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+#games .topGames .cards .card figure img{
+    width: 100%;
+}
+
+
 #about{
     padding: 2rem;
     background-color: var(--warna1);
@@ -222,30 +246,20 @@ main a{
 #about .cards .card table tr td{
     padding: .3rem .5rem;
 }
-
-@keyframes geser{
-    0%{
-        transform: translateX(-100%);
-    }
-    10%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(0);
-    }
+#about h2{
+    text-align: center;
+    color: var(--warna3);
 }
-#games .topGames .cards .card figure{
-    width: 200px;
-    height: 100px;
-    background-color: aqua;
-    overflow: hidden;
-    margin: 1rem 0;
-}
-#games .topGames .cards .card figure img{
-    width: 100%;
-}
+#about .rules{
+    margin: auto;
+    width: fit-content;
+    padding-left: 1.5rem;
 
-
+}
+#about ol{
+    color: var(--warna3);
+    display: inline-block;
+}
 
 @media screen and (max-width: 700px) {
     #home nav ul{
