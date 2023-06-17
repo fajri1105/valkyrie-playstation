@@ -1,0 +1,149 @@
+:root{
+    --warna1 : rgb(0, 19, 58);
+    --warna2 : rgb(48, 84, 148);
+    --warna3 : rgb(158, 120, 0);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--warna1);
+    overflow: hidden;
+}
+.bg video{
+    size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+#home .overflay{
+    background-color: rgba(0, 0, 0, 0.626);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#home nav{
+    width: 100%;
+    padding: .3rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home nav .logo img{
+    width: 90px;
+}
+#home nav ul {
+    display: flex;
+    list-style-type: none;
+}
+#home nav ul li.header{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: none;
+}
+#home nav ul li a{
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#home nav ul li a.login{
+    padding: .4rem 1rem;
+    background-color: var(--warna3);
+    border-radius: 15px;
+    font-weight: bold;
+}
+main{
+    width: fit-content;
+    margin: auto;
+    color: white;
+    text-align: center;
+    margin-top: 22vh
+}
+main h1{
+    font-size: 1.5rem;
+}
+main p{
+    font-size: .8rem;
+    margin-bottom: 1.3rem;
+}
+main a{
+    font-size: 2.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .1em 1.1em;
+    background-color: var(--warna3);
+    border-radius: 100px;
+}
+.menu{
+    display: none;
+}
+.humberger{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.humberger span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+    #home nav ul{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.724);
+        transform: translateX(105%);
+        display: block;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+        transition: .7s;
+    }
+    #home nav ul.muncul{
+        transform: translateX(0);
+    }
+    #home nav .menu{
+        display: initial;
+        z-index: 9999;
+    }
+    #home nav ul li.header{
+        display: block;
+        font-size: 1.7rem;
+        padding-top: 2.5rem;
+    }
+    #home nav ul li{
+        display: block;
+        padding: 1rem 7rem 1rem 1rem;
+    }
+    #home nav ul li a{
+        margin: 0;
+    }
+    main h1{
+        font-size: 1.2rem;
+    }
+    main a{
+        font-size: 1.8rem;
+    }
+}
