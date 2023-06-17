@@ -187,8 +187,41 @@ main a{
     font-size: 1.1rem;
 }
 
+#about{
+    padding: 2rem;
+    background-color: var(--warna1);
+    width: 100%;
+    box-sizing: border-box;
+}
+#about h1{
+    text-align: center;
+    color: var(--warna3);
+}
+#about p{
+    margin-top: .4rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+#about .cards{
+    display: flex;
+    width: fit-content;
+    margin: 1.2rem auto;
+}
 
-
+#about .cards .card{
+    padding: 1rem;
+    margin: 0 1rem;
+    color: var(--warna3);
+    border: 1px solid var(--warna3);
+    border-radius: 10px;
+}
+#about .cards .card h2{
+    text-align: center;
+}
+#about .cards .card table tr td{
+    padding: .3rem .5rem;
+}
 
 @keyframes geser{
     0%{
@@ -264,4 +297,18 @@ main a{
     #games .topGames .cards .card .isi{
         animation: none;
      }
+     #about {
+        padding: 1rem .3rem;
+     }
+}
+@media screen and (max-width : 576px){
+    #about .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+    #about .cards .card{
+        border: none;
+    }
+
 }
