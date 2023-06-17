@@ -8,39 +8,84 @@
   </head>
   <body>
     <div id="home">
-        <div class="bg">
-            <video src="img/background.mp4" autoplay muted loop></video>
-        </div>
-        <div class="overflay">
-            <nav>
-            <div class="logo">
-                <img src="img/logo/logo.png" alt="" />
+      <div class="bg">
+        <video src="img/background.mp4" autoplay muted loop></video>
+      </div>
+      <div class="overflay">
+        <nav>
+          <div class="logo">
+            <img src="img/logo/logo.png" alt="" />
+          </div>
+          <ul class="navbar">
+            <li class="header">Menu</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Games</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="" class="login">Login</a></li>
+          </ul>
+          <div class="menu">
+            <div class="humberger"><span></span><span></span><span></span></div>
+          </div>
+        </nav>
+        <main>
+          <h1>Valkyrie Playstation</h1>
+          <p>Website resmi pemesanan online</p>
+          <a href="">Booking Now!</a>
+        </main>
+      </div>
+    </div>
+    <div id="games">
+        <section class="topGames">
+            <h1>Top Games</h1>
+            <div class="scroll">
+            <div class="cards">
+                <div class="card">
+                    <div class="isi">
+                    <figure>
+                        <img src="img/308631728.jpg" alt="">
+                    </figure>
+                    <h2>PES 2021</h2>
+                    <p>Ps5</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="isi">
+                    <figure>
+                        <img src="img/308631728.jpg" alt="">
+                    </figure>
+                    <h2>PES 2021</h2>
+                    <p>Ps5</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="isi">
+                    <figure>
+                        <img src="img/308631728.jpg" alt="">
+                    </figure>
+                    <h2>PES 2021</h2>
+                    <p>Ps5</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="isi">
+                    <figure>
+                        <img src="img/308631728.jpg" alt="">
+                    </figure>
+                    <h2>PES 2021</h2>
+                    <p>Ps5</p>
+                    </div>
+                </div>
             </div>
-            <ul class="navbar">
-                <li class="header">Menu</li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="" class="login">Login</a></li>
-            </ul>
-            <div class="menu">
-                <div class="humberger"><span></span><span></span><span></span></div>
             </div>
-            </nav>
-            <main>
-            <h1>Valkyrie Playstation</h1>
-            <p>Website resmi pemesanan online</p>
-            <a href="">Booking Now!</a>
-            </main>
-        </div>
+        </section>
     </div>
     <script>
-        const tblMenu = document.querySelector('#home .menu');
-        tblMenu.addEventListener('click', function(){
-            const slideMenu = document.querySelector('#home nav ul');
-            slideMenu.classList.toggle('muncul');
-        })
+      const tblMenu = document.querySelector("#home .menu");
+      tblMenu.addEventListener("click", function () {
+        const slideMenu = document.querySelector("#home nav ul");
+        slideMenu.classList.toggle("muncul");
+      });
     </script>
   </body>
 </html>

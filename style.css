@@ -109,6 +109,56 @@ main a{
     background-color: white;
 }
 
+#games .topGames{
+    padding: 2rem;
+    background-color: var(--warna1);
+    color: var(--warna2);
+}
+#games .topGames h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: .4rem .8rem;
+    margin-bottom: 1.6rem;
+}
+#games .topGames .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+#games .topGames .cards .card{
+    width: 100%;
+    border-left: 2px solid var(--warna2);
+    padding-left: .5rem;
+    overflow: hidden;
+}
+#games .topGames .cards .card .isi{
+   animation: geser 10s ease infinite;
+}
+@keyframes geser{
+    0%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#games .topGames .cards .card figure{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+#games .topGames .cards .card figure img{
+    width: 100%;
+}
+
+
+
 @media screen and (max-width: 700px) {
     #home nav ul{
         position: fixed;
@@ -146,4 +196,17 @@ main a{
     main a{
         font-size: 1.8rem;
     }
+    #games .topGames{
+        padding: 0;
+    }
+    #games .topGames .cards{
+        width: 250%;
+    }
+    #games .topGames .scroll{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    #games .topGames .cards .card .isi{
+        animation: none;
+     }
 }
