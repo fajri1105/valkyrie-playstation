@@ -135,6 +135,61 @@ main a{
 #games .topGames .cards .card .isi{
    animation: geser 10s ease infinite;
 }
+#games .ps{
+    padding: 2rem 0;
+    background-color: var(--warna1);
+    background-image: url(img/308631728.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#games .ps h2{
+    padding-top: 1rem;
+}
+#games .Jps{
+    background-color: rgba(0, 0, 0, 0.578);
+}
+#games .Jps .scroll{
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+#games .Jps .cards{
+    margin-top: 1rem;
+    display: flex;
+    width: max-content;
+    justify-content: start;
+}
+#games .Jps .cards .card{
+    display: inline-block;
+    width: 200px;
+    margin: 0 .5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#games .Jps .cards .card figure{
+    width: 180px;
+    height: 100px;
+    background-color: var(--warna1);
+    margin: auto;
+}
+#games .Jps .cards .card figure img{
+    width: 180px;
+    height: 100px;
+}
+#games .Jps .cards .card h3{
+    margin-top: .4rem;
+    font-size: 1.1rem;
+}
+
+
+
+
 @keyframes geser{
     0%{
         transform: translateX(-100%);
@@ -197,7 +252,7 @@ main a{
         font-size: 1.8rem;
     }
     #games .topGames{
-        padding: 0;
+        padding: 1rem 0;
     }
     #games .topGames .cards{
         width: 250%;
